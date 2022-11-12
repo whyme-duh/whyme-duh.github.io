@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --name-font: 'Anton', sans-serif;
+    --para-font: 'Inconsolata', monospace;
+    --title-font:'Josefin Sans', sans-serif;
+}
+.title{
+    font-family: monospace;
+    font-weight: 900;
+    padding: 1em;
+}
+
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side img{
+    height: 100%;
+}
+.left-side{
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.left-side h1{
+    font-size: 2vw;
+    font-family: var(--name-font);
+}
+.name{
+    font-size:4vw;
+    padding-top: 0.5em;
+}
+
+.left-side p{
+    font-size: 1.5vw;
+    font-family: var(--para-font);
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.contacts{
+    display: flex;
+}
+.contacts a{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+a .fa{
+    font-size: 1.5vw;
+}
+.button{
+    padding: 0.8em;
+    margin: 1em;
+    border-radius: 5px;
+    font-family: var(--para-font);
+    font-size: 1vw;
+    background-color: lightblue;
+}
+.button:hover{
+    text-decoration: none;
+
+    cursor: pointer;
+    background-color: rgb(118, 196, 222);
+}
+footer{
+    position: absolute;
+    font-family: var(--para-font);
+    width: 100%;
+    bottom: 0;
+}
+.content{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+/* project part */
+
+@keyframes card-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+.project-content{
+    margin-top: 2em;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.project-content a{
+    text-decoration: none;
+    color: black;
+}
+.project-content .fa{
+    font-size: 15px;
+    text-align: left;
+}
+.back-to-home-nav{
+    animation: card-animation 1s ease-in;
+
+}
+.project-content small{
+    text-align: center;
+    font-size: 1em;
+    font-family: var(--para-font);
+    padding-left: 0.5em;
+}
+.projects{
+    width: 100%;
+    margin-top: 1em;
+}
+.back-icons .fa{
+    margin-right: 2em;
+}
+.projects h5{
+    letter-spacing: 3px;
+    animation:card-animation 2.5s ;
+
+    font-family: var(--name-font);
+}
+.projects ul{
+    margin-top: 2em;
+    list-style: none;
+    text-decoration: none;
+
+}
+#first{
+    animation: card-animation 2.5s ;
+
+}
+#second{
+    animation: card-animation 3s ;
+
+}
+#third{
+    animation: card-animation 3.5s ;
+
+}
+.projects li{
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 1em;
+    padding: 0.5em 1em 0.25em 1em;
+    width: 90%;
+    background-color: rgb(205, 205, 243);
+
+}
+.projects li a:link{
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family:var(--title-font);
+}
+.desc{
+    font-family:var(--para-font);
+    font-size:0.9em;
+}
+
+.projects li:hover{
+    cursor: pointer;
+    background-color: rgb(188, 188, 239);
+
+}
+.btn-more{
+    margin-top: 2em;
+    animation: 4;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(143, 143, 191);
+    font-size: 1em;
+    font-family: var(--para-font);
+    padding: 0.5em;
+    border-radius:5px;
+
+}
+.btn-more:link{
+    animation: card-animation 4.5s ;
+
+    text-decoration: none;
+}
+.btn-more:hover{
+    background-color: rgb(188, 188, 239);
+
+}
+
+
+@media only screen and (max-width:780px) {
+    .left-side{
+        margin-top: 1em;
+    }
+    .left-side h1{
+        font-size: 4vw;
+    }
+    .name{
+        font-size: 7vw;
+    }
+    .left-side p{
+        font-size: 4vw;
+    }
+    .button{
+        
+        font-size: 3vw;
+    }
+    a .fa{
+        font-size: 4vw;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    
+    .left-side h1{
+        font-size: 8vw;
+    }
+    .name{
+        font-size: 10vw;
+    }
+    .left-side p{
+        font-size: 6vw;
+    }
+    .button{
+        
+        font-size: 5vw;
+    }
+    a .fa{
+        font-size: 6vw;
+    }
+    .projects ul{
+        margin-top: 2em;
+        padding: 0;
+    }
+    .projects li{
+        width: 100%;
+        height: auto;
+    }
+    
+    .projects h5{
+        text-align: center;
+        font-size: 1em;
+    }
+    .projects ul{
+        font-size: 0.7em;
+    }
+    .btn-more{
+        font-size: 0.7em;
+    }
+    
+}
+@media only screen and (max-width:380px) {
+    
+    .left-side h1{
+        font-size: 0.8em;
+    }
+    .name{
+        font-size: 1.5em;
+    }
+    .left-side p{
+        text-align: center;
+        font-size: 0.5em;
+    }
+    .button{
+        
+        font-size: 0.5em;
+    }
+    a .fa{
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .content{
+        font-size: 0.5em;
+    }
+    
+}
+@media only screen and (max-width:185px) {
+    
+    .left-side h1{
+        font-size: 0.65em;
+    }
+    .name{
+        font-size: clamp(1.2em,2vh,1.35em);
+    }
+    .left-side p{
+        text-align: center;
+        font-size: 0.5em;
+    }
+    .button{
+        
+        font-size: 0.35em;
+    }
+    a .fa{
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .content{
+        font-size: 0.5em;
+    }
+    .projects ul{
+        margin-top: 2em;
+        padding: 0;
+        font-size: 0.5em;
+
+    }
+    
+    .projects li{
+        width: 100%;
+        height: auto;
+    }
+    .project-title {
+        font-size: 0em;
+    }
+    
+    .projects h5{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .btn-more{
+        font-size: 0.5em;
+
+    }
+    
+}
