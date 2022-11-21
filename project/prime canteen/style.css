@@ -613,10 +613,15 @@ body{
 }
 .btn{
     margin-top: 2em;
-    font-weight: 700;
     cursor: pointer;
     background-color: rgb(201, 201, 228);
     padding: 0.5em 3em 0.5em 3em;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+
 }
 
 .btn:hover{
@@ -656,13 +661,13 @@ body{
 .events-title h1{
     color: gray;
     opacity: 0.4;
-    font-size: 5em;
+    font-size: 4.5em;
 }
 .events-title h5{
     position: absolute;
     bottom: 0;
     left: 30%;
-    top: 37%;
+    top: 32%;
     font-size: 3.15em;
     color: rgb(234, 151, 44);
     font-family: monospace;
@@ -691,7 +696,8 @@ footer p{
     font-size: 1em;
     color: orange;
     letter-spacing: 2px ;
-    padding-left: 2em;
+    padding-left: 2.3em;
+    width: 80%;
 }
 
 .right-side ul{
